@@ -1,33 +1,29 @@
-
-/**
- * Write a description of class Searcher here.
+/* **********************************************************
+ * Programmer:    Samarjeet Randhawa
+ * Class:        CS20S
+ * 
+ * Assignment:    A2 Sorting and Searching
  *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Searcher
-{
-    // instance variables - replace the example below with your own
-    private int x;
+ * Description:    class to do some standard array work, load and print to name
+two
+ **************************************************************/
 
-    /**
-     * Constructor for objects of class Searcher
-     */
-    public Searcher()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+public class Searcher{
+    
+    //constructors 
+    public Searcher(){
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    }// default constructor 
+
+    //bubble sort 
+    public static void bubbleSort(int[] list, int len){
+        for(int i = 0; i <len; i++){
+            if(list[0] > list[i]){
+                int temp = list[0];
+                list[0] = list[i];
+                list[i] = temp; 
+            }// end for 
+        }// end for 
+    }// end method bubblesort 
+
 }

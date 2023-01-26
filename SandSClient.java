@@ -67,7 +67,11 @@ public class SandSClient {  // begin class
         // load, print, sort and print the list 
        actualLength = arrayFunctions.loadList(list); //load
        arrayFunctions.printList(list, actualLength); //print 
+       
+       System.out.println("--------------------------------"); 
      
+       
+       System.out.println("bubble sort");
        s.bubbleSort(list, actualLength);             //sort
        arrayFunctions.printList(list, actualLength); //print
 
