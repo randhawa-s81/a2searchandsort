@@ -1,6 +1,6 @@
 /* **********************************************************
  * Programmer:    Samarjeet Randhawa
- * Class:        CS40S
+ * Class:         CS40S
  * 
  * Assignment:    A2 Sorting and Searching
  *
@@ -15,7 +15,7 @@ public class Sorter{
 
     }// default constructor 
 
-    //bubble sort 
+    //bubble sort algorithim 
     public static void bubbleSort(int[] list, int len){
         for(int i = 0; i  <len; i++){
             for(int j = 0; j < len-i-1; j++){
@@ -31,9 +31,20 @@ public class Sorter{
 
     }   // end bubblesort 
 
+    //selection sort algorithim method 
     public static void selectionSort(int[] list, int len){
-        for(int i = 0; i < len; i++){
-            
+        for(int i = 0; i < list.length-1; i++){
+            int minValue = i;
+            for(int j = i +1; j < list.length; i++){
+                if(list[minValue] > list[j]){
+                    minValue = j;
+                }
+            }// end j 
+            if(minValue != i){
+            int temp = list[i]; //temp variable to hold the value of index i
+                    list[i] = list[minValue]; //switching the values of index i
+                    list[minValue] = temp;
+                }
         }// end for i 
     }// end selection sort method 
     }// end sorter 

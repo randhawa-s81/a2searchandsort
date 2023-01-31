@@ -35,7 +35,8 @@ import java.util.Random;
      
      public void printList(int[] list, int len){
          for(int i = 0; i < len; i++)
-             System.out.println(i + ". " + list[i]);
+             System.out.println(i + ". " + list[i] + "");
+             //System.out.print(list[i] + ",");
      } // end print array
 
     // ********** mutators **********

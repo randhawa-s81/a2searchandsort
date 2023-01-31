@@ -68,12 +68,25 @@ public class SandSClient {  // begin class
        actualLength = arrayFunctions.loadList(list); //load
        arrayFunctions.printList(list, actualLength); //print 
        
-       System.out.println("--------------------------------"); 
-     
+       //System.out.println("--------------------------------"); 
+       
        
        System.out.println("bubble sort");
+       
+         System.out.println();
+         System.out.println();
+           
+       //bubble sort 
        s.bubbleSort(list, actualLength);             //sort
        arrayFunctions.printList(list, actualLength); //print
+       
+       System.out.println("--------------------------------"); 
+       System.out.println();
+       
+       //selection sort 
+       //s.selectionSort(list, actualLength);             //sort
+       //arrayFunctions.printList(list, actualLength); //print
+       
 
     // **** quick sort ****
     
@@ -88,10 +101,13 @@ public class SandSClient {  // begin class
             
         // re-load the list so it is once again unsorted
         // print, sort and print again
-//        actualLength = arrayFunctions.loadList(list);
-//        arrayFunctions.printList(list, actualLength);
-//        s.selectionSort(list, actualLength);
-//        arrayFunctions.printList(list, actualLength);
+        actualLength = arrayFunctions.loadList(list); //load 
+        arrayFunctions.printList(list, actualLength);  //print
+        
+        System.out.println("selection sort");
+        s.selectionSort(list, actualLength);            //load 
+        arrayFunctions.printList(list, actualLength);    //print
+         System.out.println("selection sort");
         
         // ************** searchin **********************
         
